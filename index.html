@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta http-equiv="refresh" content="5" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Water and Wind Status</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .container{
+          margin: auto;
+          width: 45%;
+          padding-top: 15%;
+          padding-left: 5%;
+      }
+      .card{
+          width:80%; 
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          border-radius: 5px;
+          padding: 15px;
+          padding-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="background-color: rgb(118, 176, 214); text-align: center;">
+            <div class="card-body">
+              <h2 class="card-title" style="text-align: center;">WATER</h2>
+              <h3 class="card-text">{{.water}} m</h3>
+              <h3 class="card-text"><strong>{{.waterStatus}}</strong></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card" style="background-color: rgb(217, 243, 101); text-align: center;">
+            <div class="card-body">
+              <h2 class="card-title" style="text-align: center;">WIND</h2>
+              <h3 class="card-text">{{.wind}} m/s</h3>
+              <h3 class="card-text"><strong>{{.windStatus}}</strong></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
